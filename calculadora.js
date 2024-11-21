@@ -27,6 +27,7 @@ class Calculadora {
             throw new Error("No se puede calcular la raíz cuadrada de un número negativo.");
         }
         return Math.sqrt(a);
+
     }
 }
 
