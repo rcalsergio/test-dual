@@ -1,26 +1,32 @@
 class Calculadora {
     sumar(a, b) {
-        return 0
+        return a + b;
     }
 
     restar(a, b) {
-        return 0
+        return a - b;
     }
 
     multiplicar(a, b) {
-        return 0
+        return a * b;
     }
 
     dividir(a, b) {
-        return 0
+        if (b === 0) {
+            throw new Error("No se puede dividir por cero.");
+        }
+        return a / b;
     }
 
     potencia(base, exponente) {
-        return 0
+        return Math.pow(base, exponente);
     }
 
     raizCuadrada(a) {
-        return 0
+        if (a < 0) {
+            throw new Error("No se puede calcular la raíz cuadrada de un número negativo.");
+        }
+        return Math.sqrt(a);
     }
 }
 
